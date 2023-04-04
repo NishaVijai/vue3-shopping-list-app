@@ -68,32 +68,32 @@ const items = ref([
     id: 1,
     product: "Milk",
     purchased: true,
-    highPriority: false,
+    highPriority: false
   },
   {
     id: 2,
     product: "Yoghurt",
     purchased: false,
-    highPriority: true,
+    highPriority: true
   },
   {
     id: 3,
     product: "Banana",
     purchased: true,
-    highPriority: false,
+    highPriority: false
   },
   {
     id: 4,
     product: "Apples",
     purchased: false,
-    highPriority: true,
+    highPriority: true
   },
   {
     id: 5,
     product: "Juice",
     purchased: true,
-    highPriority: true,
-  },
+    highPriority: true
+  }
 ]);
 
 const trimmedInputItem = ref("");
@@ -105,7 +105,7 @@ const saveItem = () => {
   items.value.push({
     id: items.value.length + 1,
     product: trimmedInputItem.value,
-    highPriority: hasHighPriority.value,
+    highPriority: hasHighPriority.value
   });
   trimmedInputItem.value = "";
   hasHighPriority.value = "";
@@ -117,7 +117,7 @@ const setEditingModeOn = () => {
   hasHighPriority.value = "";
 };
 
-const togglePurchasedItem = (item) => {
+const togglePurchasedItem = item => {
   item.purchased = !item.purchased;
 };
 
@@ -149,6 +149,9 @@ const checkInputEmpty = () => trimmedInputItem.value.length === 0;
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  max-width: 60vw;
+  margin: 0 auto;
+  margin-top: 6rem;
 }
 
 h1 {
