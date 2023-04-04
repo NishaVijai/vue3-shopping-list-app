@@ -1,4 +1,7 @@
-# t
+# vue3 - shopping list app
+
+## preview link
+- https://f56e1o.csb.app/
 
 ## Project setup
 ```
