@@ -11,9 +11,6 @@ export default {
   components: {
     ShoppingList: ShoppingListVue,
   },
-  mounted() {
-    document.title = "Shopping List App";
-  },
 };
 </script>
 
