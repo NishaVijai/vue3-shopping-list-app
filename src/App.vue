@@ -11,7 +11,9 @@ export default {
   components: {
     ShoppingList: ShoppingListVue,
   },
-  title: "Shopping List App"
+  title () {
+    return `Shopping List App`
+  },
 };
 </script>
 
